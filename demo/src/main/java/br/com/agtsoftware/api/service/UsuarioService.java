@@ -62,7 +62,7 @@ public class UsuarioService {
     public Usuario cadastrarUsuario(UsuarioCadastroDto usuarioCadastroDto) {
 
         if (usuarioRepository.existsByUsername(usuarioCadastroDto.username())) {
-            throw new UsuarioExistenteException("Usuário com o username '" + usuarioCadastroDto.username() + "' já existe.");
+            throw new UsuarioExistenteException("Usuário com o usernamee '" + usuarioCadastroDto.username() + "' já existe.");
         }
         // Criptografar a senha antes de salvar
         String senhaCriptografada = passwordEncoder.encode(usuarioCadastroDto.password());
