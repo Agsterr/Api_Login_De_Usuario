@@ -47,7 +47,7 @@
     {
      "nome": "Agster Junior",
      "cpf": "12345678991",
-     "categoria": "ADMINISTRADOR", //Colocar a sua categoria de usuario valida.
+     "categoria": "ADMINISTRADOR", 
      "username": "Agster123", 
      "password": "senha123"  
     }
@@ -104,4 +104,4 @@
     curl -X GET "http://localhost:8080/usuarios" -H "Authorization: Bearer SEU_TOKEN_AQUI"
   
     Obs: Estas instruções acima são para rodar a aplicação no Linux para rodar no windows da para rodar pelo prompt de comando também ou por uma IDE exemplo: IntelliJ IDEA   .
-
+:
