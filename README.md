@@ -2,7 +2,7 @@
 
    Atenção esse passo a passo com os comandos são para executar a aplicação pelo Ubuntu-24.04.1 via terminal e precisa ter o asdf instalado para executar os comandos dessa forma que foi explicado .
 
-   Oque é o asdf: O asdfé uma ferramenta de gerenciamento de versões para diferentes linguagens de programação. 
+   Oque é o asdf: O asdf é uma ferramenta de gerenciamento de versões para diferentes linguagens de programação. 
 
    Para o funcionamento da Api tem que instalar as seguintes aplicações:
     
