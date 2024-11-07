@@ -6,7 +6,7 @@
 
    Para o funcionamento da Api tem que instalar as seguintes aplicações:
     
-    Esta é a versão do java:
+    Java:
     
     Usar os seguintes comandos:
 
@@ -17,7 +17,7 @@
     2-Versão
     asdf install java 17.0.2
 
-    E a versão do Maven:
+    Maven:
 
    1- Plugin:
 
@@ -84,7 +84,7 @@
        "senha": "senha123"   //Colocar senha do cadastro
      }'
 
-     No retorno da solicitação de login vai vir o token para a autenticação dos     dados .
+     No retorno da solicitação de login vai vir o token para a autenticação dos dados .
 
      exemplo de token:
 
@@ -93,10 +93,10 @@
 
 
 
-    Agora, para listar os usuários, pegue o token que retorna na requisição de l    ogin e execute este comando:
+    Agora, para listar os usuários, pegue o token que retorna na requisição de login e execute este comando:
 
 
-    curl -X GET "http://localhost:8080/usuarios" -H "Authorization: Bearer SEU_T    OKEN_AQUI"
+    curl -X GET "http://localhost:8080/usuarios" -H "Authorization: Bearer SEU_TOKEN_AQUI"
   
-    Obs: Estas instruções acima são para rodar a aplicação no Linux para rodar n    o windows da para rodar pelo prompt de comando também ou por uma IDE exemplo    : IntelliJ IDEA   .
+    Obs: Estas instruções acima são para rodar a aplicação no Linux para rodar no windows da para rodar pelo prompt de comando também ou por uma IDE exemplo: IntelliJ IDEA   .
 
