@@ -38,7 +38,7 @@
    
 1. É necessário cadastrar um usuário com os seguintes dados:
     
-    Usar um json na requisição Post contendo:
+    Usar um json na requisição Post contendo os dados do usuario:
 
     exemplo: 
 
@@ -48,19 +48,21 @@
      "nome": "Agster Junior",
      "cpf": "12345678991",
      "categoria": "ADMINISTRADOR", //Colocar a sua categoria de usuario valida.
-     "username": "Agster123", //Escolher seu nome de usuario.
-     "password": "senha123"   //Escolher a sua senha.
+     "username": "Agster123", 
+     "password": "senha123"  
     }
 
     Depois execute o seguinte comando:
+
+    
    
    curl -i -X POST "http://localhost:8080/usuarios/cadastro" -H "Content-Type: application/json" -d 
    '{
      "nome": "Agster Junior",
      "cpf": "12345678991",
      "categoria": "ADMINISTRADOR",
-     "username": "Agster123", //Escolher seu nome de usuario.
-     "password": "senha123"   //Escolher a sua senha.
+     "username": "Agster123", 
+     "password": "senha123"  
     }'
 
    Após isso, faça o login da seguinte forma:
@@ -68,6 +70,9 @@
    Exemplo:
 
    json:
+
+   //Colocar nome que esta no cadastro
+   //Colocar senha do cadastro
 
    {
      "login": "Agster123", //Colocar nome que esta no cadastro
@@ -80,8 +85,8 @@
 
     curl -i -X POST "http://localhost:8080/login" -H "Content-Type: application/   json" -d 
     '{
-       "login": "Agster123", //Colocar nome que esta no cadastro
-       "senha": "senha123"   //Colocar senha do cadastro
+       "login": "Agster123",
+       "senha": "senha123"   
      }'
 
      No retorno da solicitação de login vai vir o token para a autenticação dos dados .
