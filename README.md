@@ -1,8 +1,8 @@
    
    Descrição da minha aplicação:
 
-   Esta api foi desenvolvida para cadastrar, fazer o login e autenticação e listar os usuarios
-   é sistema para cadastrar novos usuarios e fazer requisições de dados do usuario e chegar se as informações são validas.
+   Esta api foi desenvolvida para cadastrar, fazer o login e autenticação e listar os usuários 
+   é um sistema para cadastrar novos usuarios e fazer requisições de dados do usuário e checar se as informações são válidas.
      
    
    Configurando Ambiente de desenvolvimento:
