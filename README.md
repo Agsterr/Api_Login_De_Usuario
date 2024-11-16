@@ -1,10 +1,19 @@
-   Esta api foi desenvolvida para cadastrar, fazer o login e autenticação e listar os usuarios.
+   
+   Descrição da minha aplicação:
 
+   Esta api foi desenvolvida para cadastrar, fazer o login e autenticação e listar os usuarios
+   é sistema para cadastrar novos usuarios e fazer requisições de dados do usuario e chegar se as informações são validas.
+     
+   
+   Configurando Ambiente de desenvolvimento:
+
+     
    Atenção esse passo a passo com os comandos são para executar a aplicação pelo Ubuntu-24.04.1 via terminal e precisa ter o asdf instalado para executar os comandos dessa forma que foi explicado .
 
    Oque é o asdf: O asdf é uma ferramenta de gerenciamento de versões para diferentes linguagens de programação. 
 
    Para o funcionamento da Api tem que instalar as seguintes aplicações:
+
     
     Java:
     
@@ -28,7 +37,7 @@
 
 
 
-    
+    Instruções para executar a aplicação pelo terminal: 
 
     1-Para rodar a aplicação usar o comando: `mvn spring-boot:run`.
 
@@ -71,8 +80,7 @@
 
    json:
 
-   //Colocar nome que esta no cadastro
-   //Colocar senha do cadastro
+   
 
    {
      "login": "Agster123", //Colocar nome que esta no cadastro
