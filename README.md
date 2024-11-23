@@ -1,71 +1,80 @@
    
-   Descrição da minha aplicação:
+  **Descrição da minha aplicação**:
 
-   Esta api foi desenvolvida para cadastrar, fazer o login e autenticação e listar os usuários 
+   Esta api foi desenvolvida para cadastrar, fazer login e autenticação e listar os usuários 
    é um sistema para cadastrar novos usuarios e fazer requisições de dados do usuário e checar se as informações são válidas.
      
    
-   Configurando Ambiente de desenvolvimento:
+ 
+   **Instruções de uso da api de cadastro**:
 
-     
-   Atenção esse passo a passo com os comandos são para executar a aplicação pelo Ubuntu-24.04.1 via terminal e precisa ter o asdf instalado para executar os comandos dessa forma que foi explicado .
+  
+   1-fazer o clone desse repositório .
+   2-Instalar um pacote do java jdk ou java jre.
+   3-Executar o arquivo jar 
+   
+  ## Pré-requisitos
 
-   Oque é o asdf: O asdf é uma ferramenta de gerenciamento de versões para diferentes linguagens de programação. 
-
-   Para o funcionamento da Api tem que instalar as seguintes aplicações:
-
-    
-    Java:
-    
-    Usar os seguintes comandos:
-
-    1-Plugin: 
-
-    asdf plugin add java
-
-    2-Versão
-    asdf install java 17.0.2
-
-    Maven:
-
-   1- Plugin:
-
-   asdf plugin-add maven  https://github.com/halcyon/asdf-maven.git
-
-   2-Versão:
-    asdf install maven 3.9.8 
+  **Java**: Certifique-se de ter o Java instalado em sua máquina. Você pode baixar a versão mais recente do Java no site oficial:
+  [https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)
+  **JDK Compatível**: Este projeto foi testado com a versão `Java 17`. Certifique-se de que sua JDK seja compatível.
 
 
+  **Digite o comando para verificar se o java foi instalado corretamente**:
+  
+  java -version
+  
+  Isso deve retornar a versão do Java instalada em sua máquina.
 
-    Instruções para executar a aplicação pelo terminal: 
+  **Para executar o sistema, utilize o seguinte comando no terminal**:
 
-    1-Para rodar a aplicação usar o comando: `mvn spring-boot:run`.
+  java -jar caminho/para/o/seu/arquivo.jar
 
-    Depois abra mais um terminal e execute os comandos abaixo:
+
+  **Exemplo**:
+
+  baixo:
+
+  java -jar demo-0.0.1-SNAPSHOT.jar
+  
+
 
   
    
-1. É necessário cadastrar um usuário com os seguintes dados:
+ **É necessário cadastrar um usuário com os seguintes dados**:
     
     Usar um json na requisição Post contendo os dados do usuario:
+
+    **Obs**:Escolha a sua cadegoria para o cadastro:
+    
+    São 3 opções:
+
+    BASICO
+    ADMINISTRADOR
+    AVANCADO
 
     exemplo: 
 
     json:
 
     {
-     "nome": "Agster Junior",
+     "nome": "Nome do usuario",
      "cpf": "12345678991",
      "categoria": "ADMINISTRADOR", 
      "username": "Agster123", 
      "password": "senha123"  
     }
 
-    Depois execute o seguinte comando:
+     
+     
+    **Faça uma requisição Post para a api com os dados abaixo**:
 
+    O endereço para a requisição:
+
+    http://localhost:8080/usuarios/cadastro
     
-   
-   curl -i -X POST "http://localhost:8080/usuarios/cadastro" -H "Content-Type: application/json" -d 
+    **Cadastro de usuario**:
+     
    '{
      "nome": "Agster Junior",
      "cpf": "12345678991",
@@ -74,7 +83,12 @@
      "password": "senha123"  
     }'
 
-   Após isso, faça o login da seguinte forma:
+   **Após isso, faça o login da seguinte forma**:
+
+   **Login de usuario**:
+
+   O endereço para a requisição:
+   http://localhost:8080/login
 
    Exemplo:
 
@@ -88,10 +102,10 @@
    }
 
 
-    Após isso faça o login da seguinte forma:
+     **Faça uma requisição Post para a api com os dados abaixo**
 
 
-    curl -i -X POST "http://localhost:8080/login" -H "Content-Type: application/   json" -d 
+    
     '{
        "login": "Agster123",
        "senha": "senha123"   
@@ -106,10 +120,12 @@
 
 
 
-    Agora, para listar os usuários, pegue o token que retorna na requisição de login e execute este comando:
+    Agora, para **listar** os usuários, pegue o token que retorna na requisição de login e execute este comando:
 
+     **Faça uma requisição Get para a api com os dados abaixo**
 
-    curl -X GET "http://localhost:8080/usuarios" -H "Authorization: Bearer SEU_TOKEN_AQUI"
-  
-    Obs: Estas instruções acima são para rodar a aplicação no Linux para rodar no windows da para rodar pelo prompt de comando também ou por uma IDE exemplo: IntelliJ IDEA   .
-:
+      Token de usuario no corpo da requisição.
+
+      Para o endereço:
+
+       http://localhost:8080/usuarios
