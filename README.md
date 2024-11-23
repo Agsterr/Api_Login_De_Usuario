@@ -69,9 +69,7 @@
      
     **Faça uma requisição Post para a api com os dados abaixo**:
 
-    O endereço para a requisição:
-
-    http://localhost:8080/usuarios/cadastro
+    O endereço para a requisição:http://localhost:8080/usuarios/cadastro
     
     **Cadastro de usuario**:
      
@@ -87,8 +85,7 @@
 
    **Login de usuario**:
 
-   O endereço para a requisição:
-   http://localhost:8080/login
+   O endereço para a requisição:http://localhost:8080/login
 
    Exemplo:
 
@@ -126,6 +123,4 @@
 
       Token de usuario no corpo da requisição.
 
-      Para o endereço:
-
-       http://localhost:8080/usuarios
+      Para o endereço:http://localhost:8080/usuarios
