@@ -61,8 +61,8 @@
      "nome": "Nome do usuario",
      "cpf": "12345678991",
      "categoria": "ADMINISTRADOR", 
-     "username": "Agster123", 
-     "password": "senha123"  
+     "username": "Nome", 
+     "password": "Senha"  
     }
 
      
@@ -76,11 +76,11 @@
     **Cadastro de usuario**:
      
    '{
-     "nome": "Agster Junior",
+     "nome": "Nome",
      "cpf": "12345678991",
      "categoria": "ADMINISTRADOR",
-     "username": "Agster123", 
-     "password": "senha123"  
+     "username": "Nome de usuario", 
+     "password": "Senha"  
     }'
 
    **Após isso, faça o login da seguinte forma**:
@@ -97,8 +97,8 @@
    
 
    {
-     "login": "Agster123", //Colocar nome que esta no cadastro
-     "senha": "senha123"   //Colocar senha do cadastro
+     "login": "Nome de usuario",
+     "senha": "Senha"   
    }
 
 
